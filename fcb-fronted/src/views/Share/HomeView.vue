@@ -72,6 +72,7 @@ const url = atob('aHR0cHM6Ly9naXRodWIuY29tL3Zhc3RzYS9GaWxlQ29kZUJveA==');
 </script>
 
 <template>
+    <img  class="logo" src="@/assets/images/dropbox-logo.png"  />
     <main>
       <el-card class="card" style="padding-bottom: 1rem">
         <CardTools/>
@@ -119,4 +120,11 @@ const url = atob('aHR0cHM6Ly9naXRodWIuY29tL3Zhc3RzYS9GaWxlQ29kZUJveA==');
       border-radius: 20px !important;
     }
   }
+.logo {
+  height: 128px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  z-index: 10;
+} 
 </style>
