@@ -30,7 +30,7 @@ const shareData = ref({
                 <el-option :label="t('send.expireData.day')" value="day" />
                 <el-option :label="t('send.expireData.hour')" value="hour" />
                 <el-option :label="t('send.expireData.minute')" value="minute" />
-                <el-option :label="t('send.expireData.forever')" value="forever" />
+                <!-- <el-option :label="t('send.expireData.forever')" value="forever" /> -->
                 <el-option :label="t('send.expireData.count')" value="count" />
               </el-select>
             </template>
