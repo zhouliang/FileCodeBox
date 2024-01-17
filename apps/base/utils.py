@@ -48,7 +48,7 @@ async def get_expire_info(expire_value: int, expire_style: str):
         detail = await max_save_times_desc(settings.max_save_seconds)
         detail = f'保存时间超过限制，{detail[0]}'
     else:
-        max_timedelta = datetime.timedelta(days=2)
+        max_timedelta = datetime.timedelta(days=3)
         detail = '保存时间超过限制，最长保存时间：3天'
     if expire_style == 'day':
         if datetime.timedelta(days=expire_value) > max_timedelta:
